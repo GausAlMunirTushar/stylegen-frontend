@@ -1,7 +1,11 @@
+import Title from "@/components/ui/Title"
+import FeaturedCategories from "@/components/pages/featured-categories"
+
 const ShopByCategories = () => {
     return (
-        <div>
-            <h1 className="text-3xl font-bold text-center my-3">Shop by category</h1>
+        <div className="max-w-6xl mx-auto">
+            <Title>Shop by category </Title >
+            <FeaturedCategories />
         </div>
     )
 }
