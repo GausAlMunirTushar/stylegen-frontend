@@ -5,27 +5,29 @@ import { FiShoppingCart } from "react-icons/fi";
 
 const Header = () => {
     return (
-        <header className="max-w-6xl mx-auto py-4">
-            <nav className="flex items-center justify-between">
-                <div className="flex items-center gap-14">
-                    <Logo />
-                    <ul className="flex items-center gap-5 text-lg uppercase">
-                        <li>
-                            <Link href="/products"> Products</Link>
-                        </li>
-                        <li>
-                            <Link href="/categories"> Categories</Link>
-                        </li>
-                    </ul>
-                </div>
-                <div className="flex items-center gap-5">
-                    <IoSearch />
+        <section className="border-b border-gray-200 sticky top-0 z-50 bg-white">
+            <header className="max-w-6xl mx-auto py-4">
+                <nav className="flex items-center justify-between">
+                    <div className="flex items-center gap-14">
+                        <Logo />
+                        <ul className="flex items-center gap-5 text-lg uppercase">
+                            <li>
+                                <Link href="/products"> Products</Link>
+                            </li>
+                            <li>
+                                <Link href="/categories"> Categories</Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="flex items-center gap-5">
+                        <IoSearch />
 
-                    <p className="bg-orange-100 text-primary h-8 w-8 flex items-center justify-center rounded-full" ><FiShoppingCart /></p>
-                    <Link href="/login">Login</Link>
-                </div>
-            </nav>
-        </header>
+                        <p className="bg-orange-100 text-primary h-8 w-8 flex items-center justify-center rounded-full" ><FiShoppingCart /></p>
+                        <Link href="/login">Login</Link>
+                    </div>
+                </nav>
+            </header>
+        </section>
     )
 
 }
