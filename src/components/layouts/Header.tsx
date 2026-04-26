@@ -22,6 +22,7 @@ const Header = () => {
                     <IoSearch />
 
                     <p className="bg-orange-100 text-primary h-8 w-8 flex items-center justify-center rounded-full" ><FiShoppingCart /></p>
+                    <Link href="/login">Login</Link>
                 </div>
             </nav>
         </header>
