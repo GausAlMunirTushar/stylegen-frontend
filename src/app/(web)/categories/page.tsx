@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Title from "@/components/ui/Title"
-import Button from "@/components/ui/Button"
 import categories from "@/data/categories"
+import Link from "next/link"
 
 
 
@@ -13,10 +13,10 @@ const CategoriesPage = () => {
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                     {
                         categories.map((category) => (
-                            <div key={category.name}>
+                            <Link href={`/categories/${category.slug}`} key={category.slug}>
                                 <Image width={500} height={500} alt={category.name} src={category.image} />
                                 <p className="relative bottom-8 text-white font-bold text-xl left-2">{category.name}</p>
-                            </div>
+                            </Link>
                         ))
                     }
                 </div>
